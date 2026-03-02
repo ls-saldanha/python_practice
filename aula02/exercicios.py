@@ -41,7 +41,10 @@ print(f"O resultado da multiplicação é: {resultado}")
 
 # 4. Faça um programa que peça dois números inteiros 
 # e imprima a divisão inteira do primeiro pelo segundo.
-
+x = int(input("Forneça um numero inteiro: "))
+y = int(input("Forneça um segundo número inteiro: "))
+z = x // y
+print("O resultado da divisão inteira é: ", z)
 
 
 #------------------------------ 
@@ -54,6 +57,8 @@ print(f"O resultado da multiplicação é: {resultado}")
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 # #### Strings (`str`)
