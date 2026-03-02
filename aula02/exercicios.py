@@ -57,6 +57,9 @@ print("O resultado da divisão inteira é: ", z)
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+temp_celsius = float(input("Forneça a temperatura em Celsius: "))
+temp_fah = temp_celsius*1.8 + 32
+print(f"A temperatura em fahrenheit é: {temp_fah}ºF")
 
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
