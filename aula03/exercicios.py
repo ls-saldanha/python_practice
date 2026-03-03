@@ -16,10 +16,22 @@ else:
 
 
 #------------------------------------
+
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+
+iot_temp = float(input("Qual a temperatura? "))
+
+if iot_temp < 18:
+    print("Baixa")
+elif iot_temp >= 18 and iot_temp <= 26:
+    print("Média")
+elif iot_temp > 26:
+    print("Alta")
+
+#------------------
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
