@@ -80,10 +80,37 @@ print(contagem_palavras)
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
 
 ### Exercício 8. Filtragem de Dados Faltantes
-# Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
+# Objetivo:** Dada uma lista de dicionários representando dados de usuários, 
+# filtrar aqueles que têm um campo específico faltando
+usuarios = [
+    {"nome": "Alice", "email":"alice@example.com"}, 
+    {"nome": "João", "email": ""},
+    {"nome": "Jaci", "email": "jaci@example.com"}
+    ]
+
+usuarios_validos = []
+
+for x in usuarios:
+    if usuarios['nome'] == "" or usuarios['email'] == "":
+        continue
+    else:
+        usuarios_validos += x
+
+print(usuarios_validos)
+
+
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
+ls = [1, 2, 3, 4, 5, 6 ,7 ,8, 9, 10]
+pares = []
+
+for x in ls:
+    if x % 2 == 0:
+        pares.append(x)
+
+print(pares)
+
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
