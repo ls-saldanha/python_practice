@@ -90,11 +90,21 @@ usuarios = [
 
 usuarios_validos = []
 
-for x in usuarios:
-    if usuarios['nome'] == "" or usuarios['email'] == "":
-        continue
+for d in usuarios:
+    if d.get('nome') == "" or d.get('email') == "":
+        pass
     else:
-        usuarios_validos += x
+        usuarios_validos.append(d)
+
+print(usuarios_validos)
+
+usuarios = [
+    {"nome": "Alice", "email": "alice@example.com"},
+    {"nome": "Bob", "email": ""},
+    {"nome": "Carol", "email": "carol@example.com"}
+]
+
+usuarios_validos = [usuario for usuario in usuarios if usuario["email"]]
 
 print(usuarios_validos)
 
@@ -113,7 +123,17 @@ print(pares)
 
 
 ### Exercício 10. Agregação de Dados por Categoria
-# Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+# Objetivo:** Dado um conjunto de registros de vendas, 
+# calcular o total de vendas por categoria.
+vendas = [
+    {"categoria": "eletrônicos", "valor": 1200},
+    {"categoria": "livros", "valor": 200},
+    {"categoria": "eletrônicos", "valor": 800}
+]
+vendas
+while x in vendas:
+
+
 
 ### Exercícios com WHILE
 
